@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аудио запись</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+            <div class="top-right-text">
+                <span>P</span><span>r</span><span>o</span><span>d</span><span>u</span><span>c</span><span>e</span><span>d</span><span> </span><span>b</span><span>y</span><span> </span><span>R</span><span>i</span><span>c</span><span>h</span><span>a</span><span>r</span><span>d</span>
+            </div>
+            <div id="passwordForm" class="password-form">
+                <input type="password" id="passwordInput" placeholder="Enter password">
+                <button id="togglePassword">Show Password</button>
+                <button id="passwordSubmit">Submit</button>
+            </div>
+            <div id="audioRecorder" style="display: none;">
+                <div class="controls">
+                    <button id="leftButton" class="control-button">&#8592;</button>
+                    <button id="upButton" class="control-button">&#8593;</button>
+                    <button id="downButton" class="control-button">&#8595;</button>
+                    <button id="rightButton" class="control-button">&#8594;</button>
+                </div>
+                <div class="microphone">
+                    <button id="recordButton">
+                        <img id="micImage" src="microphone.png" alt="Microphone">
+                    </button>
+                </div>
+                <div id="status" class="status">Нажмите, чтобы начать запись</div>
+                <div id="loader" class="loader"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
